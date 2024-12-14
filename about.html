@@ -8,7 +8,8 @@
   <script>
     function togglePhoto() {
       const img = document.getElementById('mainPhoto');
-      img.src = img.src.includes('foto1.jpg') ? 'foto2.jpg' : 'foto1.jpg';
+      const currentSrc = img.src.split('/').pop(); // Get the last part of the URL (filename)
+      img.src = currentSrc === 'foto1.jpg' ? 'foto2.jpg' : 'foto1.jpg';
     }
   </script>
 </head>
