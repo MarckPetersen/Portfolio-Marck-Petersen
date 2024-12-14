@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Marck Petersen</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    function togglePhoto() {
+      const img = document.getElementById('mainPhoto');
+      img.src = img.src.includes('foto1.jpg') ? 'foto2.jpg' : 'foto1.jpg';
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -19,6 +25,11 @@
   <section>
     <h2>Meet Marck Petersen</h2>
     <p>Hi there! I'm Marck Petersen, a seasoned Quality Assurance wizard who has transitioned to developing innovative solutions using tools like ChatGPT, Gherkin syntax, and GitHub to design and describe software without writing traditional code. Think of me as the Sherlock Holmes of QA—but instead of solving crimes, I solve bugs and inefficiencies. With over 30 years of experience in Quality Assurance and Test Management, I've danced my way through waterfall and agile projects, ensuring software perfection across platforms and industries.</p>
+
+    <div style="text-align: center; margin: 2rem 0;">
+      <img id="mainPhoto" src="foto1.jpg" alt="Marck Petersen" style="width: 300px; border-radius: 10px; cursor: pointer;" onclick="togglePhoto()">
+      <p style="font-size: 0.9rem; color: gray;">Click on the photo to view another image.</p>
+    </div>
 
     <h3>Professional Life</h3>
     <p>I've led QA efforts for top companies, from Saxo Bank to Pensiondanmark, and now I'm embracing a new chapter—developing software through modern tools that let me focus on design and functionality without manual coding. Need a test plan? Done. Need an exploratory testing guru? I'm your guy. Need someone who can make risk-based testing sound like an adventure? Look no further. My superpower? Turning chaos into order while making sure no bug gets past my watchful eyes.</p>
