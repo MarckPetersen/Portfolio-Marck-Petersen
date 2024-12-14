@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marck Petersen Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+  Feature: Portfolio Website for Marck Petersen
+    As a visitor
+    I want to learn about Marck Petersen and explore his development projects
+    So that I can understand his skills and experience
+
+    Background:
+      Given Marck Petersen's GitHub profile is available at "https://github.com/MarckPetersen"
+      And the website includes sections for "About Me," "Projects," and "Contact"
+
+    Scenario: Displaying information about Marck Petersen
+      Given I am on the homepage of Marck Petersen's portfolio
+      When I view the "About Me" section
+      Then I should see Marck Petersen's professional background, skills, and experience
+
+    Scenario: Exploring development projects
+      Given I am on the homepage of Marck Petersen's portfolio
+      When I navigate to the "Projects" section
+      Then I should see a list of development projects with links to GitHub repositories
+      And each project should display a title, description, and technologies used
+
+    Scenario: Contacting Marck Petersen
+      Given I am on the homepage of Marck Petersen's portfolio
+      When I navigate to the "Contact" section
+      Then I should see a contact form with fields for name, email, and message
+      And a button to submit the form
+      And links to social media profiles and email contact
+
+    Scenario: Viewing the GitHub profile
+      Given I am on the homepage of Marck Petersen's portfolio
+      When I click the "View GitHub" button
+      Then I should be redirected to "https://github.com/MarckPetersen"
+
+    Scenario: Viewing the website on mobile devices
+      Given I am on the portfolio website
+      When I view it on a mobile device
+      Then the layout should adapt to fit the screen size
+      And all sections should remain accessible and readable
+  -->
+
+  <header>
+    <h1>Marck Petersen's Portfolio</h1>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Marck Petersen, a seasoned QA and Test Manager with over 30 years of experience in software development, testing, and quality assurance. Explore my projects and skills below.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3><a href="https://github.com/MarckPetersen/project1" target="_blank">Project 1</a></h3>
+        <p>Description of Project 1: Technologies used include Java, Selenium, and REST APIs.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/MarckPetersen/project2" target="_blank">Project 2</a></h3>
+        <p>Description of Project 2: Developed with Python and Django.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:marck.petersen@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Marck Petersen | <a href="https://github.com/MarckPetersen" target="_blank">GitHub</a></p>
+  </footer>
+</body>
+</html>
